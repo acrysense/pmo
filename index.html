@@ -203,18 +203,24 @@
 			<div class="container">
 				<div class="advantages__wrapper">
 					<article class="advantages__item">
-						<h3 class="advantages__title">4000+ в день</h3>
-						<p class="advantages__description">проводим предрейсовых и послерейсовых осмотров в Москве и МО</p>
+						<div class="advantages__group">
+							<h3 class="advantages__title">4000+ в день</h3>
+							<p class="advantages__description">проводим предрейсовых и послерейсовых осмотров в Москве и МО</p>
+						</div>
 						<a href="#" class="advantages__link">Записаться на приём</a>
 					</article>
 					<article class="advantages__item">
-						<h3 class="advantages__title">12 кабинетов в Москве</h3>
-						<p class="advantages__description">проводим осмотры в любое удобное для вас и ваших сотрудников время</p>
+						<div class="advantages__group">
+							<h3 class="advantages__title">12 кабинетов в Москве</h3>
+							<p class="advantages__description">проводим осмотры в любое удобное для вас и ваших сотрудников время</p>
+						</div>
 						<a href="#" class="advantages__link">Выбрать кабинет</a>
 					</article>
 					<article class="advantages__item">
-						<h3 class="advantages__title">Госпроверка</h3>
-						<p class="advantages__description">подготовим все нужные документы для плановой или внеплановой проверки госорганов</p>
+						<div class="advantages__group">
+							<h3 class="advantages__title">Госпроверка</h3>
+							<p class="advantages__description">подготовим все нужные документы для плановой или внеплановой проверки госорганов</p>
+						</div>
 						<a href="#" class="advantages__link">Оставить заявку</a>
 					</article>
 				</div>
@@ -588,7 +594,7 @@
 						</a>
 					</div>
 					<div class="tabs__wrapper">
-						<div class="office-addresses__map ya-map"></div>
+						<div class="office-addresses__map ya-map" id="YMapsID"></div>
 					</div>
 				</div>
 			</div>
@@ -683,8 +689,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="about__quote-wrap">
-					<blockquote class="about__quote">За весь период работы медицинских кабинетов мы зарекомендовали себя как надёжное медицинское учреждение, которому доверяют клиенты и партнёры.</blockquote>
+				<div class="c-quote about__quote">
+					<blockquote class="c-quote__text">За весь период работы медицинских кабинетов мы зарекомендовали себя как надёжное медицинское учреждение, которому доверяют клиенты и партнёры.</blockquote>
 				</div>
 				<div class="about-videos about__videos">
 					<a href="#" class="about-videos__item">
@@ -976,6 +982,26 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=077ae27d-1d73-4911-93fe-71161e91577a&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		ymaps.ready(function() {
+			var myMap = new ymaps.Map("YMapsID", {
+				center: [55.749998, 37.606325],
+				zoom: 12,
+				controls: []
+			}, {
+				suppressMapOpenBlock: true
+			});
+
+			var myPlacemark = new ymaps.Placemark([55.749998, 37.606325], {}, {
+				iconLayout: "default#imageWithContent",
+				iconImageHref: "img/icon-balloon-blue.svg",
+				iconImageSize: [40, 40],
+				iconImageOffset: [-12, -50],
+			})
+			myMap.geoObjects.add(myPlacemark);
+		});
+	</script>
 </body>
 
 </html>
