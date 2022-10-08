@@ -420,6 +420,53 @@
 							</ul>
 							<span class="tabs__help">40 кабинетов в Москве и МО</span>
 						</div>
+						<div class="tabs__select select-box">
+							<div class="select-box__container">
+								<div class="select-box__wrap" data-simplebar>
+									<div class="select-box__scroll">
+										<div class="select-box__option select-box__option--flex">
+											<input type="text" class="select-box__search" placeholder="Поиск">
+											<button class="select-box__search-btn">
+												<svg class="select-box__search-icon">
+													<use xlink:href="img/sprite.svg#icon-search"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-01" name="payments-sort-0">
+											<label for="payments-sort-01" class="select-box__label">Самарская область</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-02" name="payments-sort-0">
+											<label for="payments-sort-02" class="select-box__label">Самарский округ №158</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-03" name="payments-sort-0">
+											<label for="payments-sort-03" class="select-box__label">Тольяттинский округ №159</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-04" name="payments-sort-0">
+											<label for="payments-sort-04" class="select-box__label">Красноглинский округ №160</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-05" name="payments-sort-0">
+											<label for="payments-sort-05" class="select-box__label">Жигулёвский округ №161</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-06" name="payments-sort-0">
+											<label for="payments-sort-06" class="select-box__label">Тольяттинский округ №159</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="payments-sort-07" name="payments-sort-0">
+											<label for="payments-sort-07" class="select-box__label">Самарская область</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="select-box__select">
+								<span class="select-box__selected">Округ</span>
+							</div>
+						</div>
 					</div>
 					<div class="tabs__wrapper tabs__wrapper--active">
 						<div class="office-addresses__wrapper">
@@ -540,7 +587,9 @@
 							<span class="btn-more__help">показано <span>8</span> из <span>40</span></span>
 						</a>
 					</div>
-					<div class="tabs__wrapper"></div>
+					<div class="tabs__wrapper">
+						<div class="office-addresses__map ya-map"></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -668,67 +717,67 @@
 					<div class="swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 							<div class="swiper-slide">
-								<div class="licenses__slide">
+								<a href="#" class="licenses__slide">
 									<picture class="licenses__img">
 										<img src="img/license-01.png" alt="Image">
 									</picture>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -907,7 +956,7 @@
 					</div>
 					<div class="footer__bottom">
 						<ul class="footer__list">
-							<li class="footer__item">
+							<li class="footer__item footer__item--copyright">
 								<p class="footer__copyright">©2022, ООО «ВИТА МЕД»</p>
 							</li>
 							<li class="footer__item">
@@ -917,6 +966,7 @@
 								<a href="#" class="footer__link">Реквизиты компании</a>
 							</li>
 						</ul>
+						<p class="footer__copyright footer__copyright--mobile">©2022, ООО «ВИТА МЕД»</p>
 					</div>
 				</div>
 			</div>
