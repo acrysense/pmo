@@ -1124,6 +1124,45 @@
 		<div class="modal__overlay"></div>
 	</div>
 	<!-- end of modals -->
+	<div class="modal modal--active" id="modal-application-clinic">
+		<div class="modal__scroll">
+			<button class="modal__close-btn modal__close-btn--white modal__close" aria-label="Закрыть">
+				<svg class="modal__close-icon">
+					<use xlink:href="img/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="modal__wrapper modal__wrapper--md modal__wrapper--flex">
+				<div class="modal__left">
+					<h3 class="modal__heading modal__heading--center modal__heading--sm">Оставить заявку</h3>
+					<p class="modal__description modal__description--center">
+						Заполните данные, и наш специалист <br>свяжется с вами через несколько минут, чтобы уточнить <br>все детали
+					</p>
+					<form action="#" class="modal-form modal__form">
+						<input type="text" class="input-control input-control--accent input-control--center modal-form__input" placeholder="Ваше имя">
+						<input type="tel" class="input-control input-control--accent input-control--center modal-form__input" placeholder="Ваш телефон" data-inputmask="'mask': '+7 999 999-99-99'">
+						<button class="modal-form__btn btn btn--accent">Отправить заявку</button>
+						<span class="modal-form__help">Нажимая на кнопку «Отправить заявку», вы соглашаетесь с нашей <a href="#" target="_blank">Политикой конфиденциальности</a></span>
+					</form>
+				</div>
+				<div class="modal__right">
+					<div class="clinic modal__clinic">
+						<picture class="clinic__img">
+							<img src="img/office-addresses-02.png" alt="Image">
+							<span class="clinic__status">круглосуточно</span>
+						</picture>
+						<div class="clinic__body">
+							<span class="clinic__subtitle">Клиника</span>
+							<h3 class="clinic__title">Сокол</h3>
+							<span class="clinic__metro clinic__metro--green">м. Сокол</span>
+							<span class="clinic__elem">Ленинградский проспект 80</span>
+							<span class="clinic__elem">+7 495 260-12-28</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+	</div>
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
