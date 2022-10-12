@@ -1140,10 +1140,13 @@
 			var myMap = new ymaps.Map("YMapsID", {
 				center: [55.749998, 37.606325],
 				zoom: 12,
-				controls: []
+				controls: [],
 			}, {
 				suppressMapOpenBlock: true
 			});
+
+			//myMap.behaviors.disable('scrollZoom'); 
+			ymapsTouchScroll(myMap);
 
 			var myPlacemark = new ymaps.Placemark([55.745998, 37.616325], {
 				balloonContentBody: '<a href="#" class="c-clinic">' +
